@@ -148,6 +148,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition:  .1s;
 }
 .nav__item{
     margin-right: 25px;
@@ -225,6 +226,7 @@
     height: 2px;
     background-color: #fff;
     position: absolute;
+    transition: all ease-out .1s;
   }
   .nav__btn span::before{
     top: -8px;
@@ -232,13 +234,16 @@
   .nav__btn span::after{
     bottom: -8px;
   }
-  .nav__btn.active .nav__btn span::before{
+  .nav__btn.active span::before{
     top: 0;
     transform: rotate(-45deg);
   }
-  .nav__btn.active .nav__btn span:after{
+  .nav__btn.active span:after{
     bottom: 0;
     transform: rotate(45deg);
+  }
+  .nav__btn.active span{
+    background-color: transparent;
   }
   body.active-menu{
     overflow: hidden;
@@ -258,12 +263,13 @@
     background: rgb(0, 0, 0);
   }
   .nav__list{
-    transform: translateY(-10000px);
+    transform: translateY(-1000px);
     display: none;
   }
   .nav__list.active{
     display: flex;
     transform: translateY(0px);
+    transition: all ease-in-out .1s;
   }
   .nav__item:not(:last-child){
     margin-bottom: 30px;
