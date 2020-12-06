@@ -256,7 +256,6 @@
     right: 0;
     left: 0;
     background: rgb(0, 0, 0);
-    overflow-y: scroll;
   }
   .nav__list{
     transform: translateY(-10000px);
