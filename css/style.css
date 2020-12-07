@@ -142,7 +142,7 @@
   align-items: center;
 }
 .nav__btn{
-  outline: none;
+  webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: none;
 }
 .nav__list{
